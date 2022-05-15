@@ -1,0 +1,51 @@
+{
+  "name": "nextjs-starter-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./.next",
+    "cleann": "rm -rf ./node_modules",
+    "clear": "yarn clean",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev": "yarn clean && next dev",
+    "prod": "yarn build && yarn start",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-types": "tsc --pretty --noEmit",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "serve-json": "json-server --watch json.json --port 4000",
+    "kill": "kill -9 $(sudo lsof -t -i: 3000)"
+  },
+  "dependencies": {
+    "@fontsource/koulen": "^4.5.8",
+    "@fontsource/rubik": "^4.5.9",
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "next": "12.1.6",
+    "next-seo": "^5.4.0",
+    "next-themes": "^0.2.0",
+    "postcss": "^8.4.13",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.3.1",
+    "rough-notation": "^0.5.1",
+    "sharp": "^0.30.4"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.1.6",
+    "@types/node": "^17.0.33",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.6.4"
+  }
+}
