@@ -39,3 +39,8 @@ public/**
 public
 .tmp
 .tmp/**
+
+
+*.env
+**.env
+**.env.**
